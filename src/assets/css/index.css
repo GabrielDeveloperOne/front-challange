@@ -1,3 +1,68 @@
-body {
-  margin: 80px;
+/* Todo o estilo */
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{ height: 100%; }
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg,#4d73d8, #3e65ce );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* Container */
+.container{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  width: 76%;
+  height: 85%;
+  box-shadow: 16px 23px 42px rgba(0,0,0,.3);
+  border-radius: 7px;
+}
+
+h1 {
+  text-align: center;
+}
+/* Imagem Container */
+.img__cachorro{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px 0 0 7px;
+  background-image: url(../img/cachorro.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.informacoes h1{
+  font-weight: 400;
+  font-size: 2em;
+}
+
+
+/* Media Queries -  */
+@media(max-width : 1024px){
+  .img__cachorro{ display: none; }
+  .container{ grid-template-columns: 1fr; }
+  .contentform{
+      grid-row: 1/2;
+      grid-column: 1/2;
+  }
+}
+@media(max-width : 530px){
+  .informacoes h1{ font-size: 30px; }
+  .informacoes p{ font-size: 16px; }
+  .formcontent input{ width: 100%; }
+  .container{ width: 325px; }
 }

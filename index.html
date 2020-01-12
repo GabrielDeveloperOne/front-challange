@@ -6,8 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dasafio front-end</title>
     <link rel="stylesheet" href="src/assets/css/index.css" />
+    <link rel="stylesheet" href="src/assets/css/form.css" />
   </head>
-  <body>
-    <!-- escreva seu codigo aqui -->
+  <body class="app">
+    <div class="container">
+      <div class="img__cachorro"></div>
+      <div class="contentform">
+          <div>
+            <div class="informacoes">
+              <h1>Create an Account!</h1>
+              <span class="erro"></span>
+            </div>
+            <div class="formcontent">
+              <form>
+                <!-- Forms -->
+                <div class="formcontent__row">
+                  
+                    <input class="formcontent__row--together unicos" type="text"  placeholder="First name" required>
+                    <input class="formcontent__row--together " type="text"  placeholder="Phone" required>
+                  
+                </div>
+
+                <input type="text"  placeholder="Email Addres" required>
+
+                <div class="formcontent__row">
+                  <input class="formcontent__row--together unicos" type="password" placeholder="password" required>
+                  <input class="formcontent__row--together " type="password" placeholder="repeat password" required>
+                </div>
+
+                <!-- Botões para submeter form -->
+                <button type="submit" ><span></span></button>
+                <button type="submit"><span></span></button>
+                <button type="submit"><span></span></button>
+                <input type="submit" name="submit" value="Register Account">
+                <input type="submit" name="submit" value="Register with Google">
+                <input type="submit" name="submit" value="Register with Facebook">
+              </form>
+            </div>
+           </div>
+        </div>
+    </div>
+    <footer>
+      <script src="src/js/app.js"></script>
+    </footer>
   </body>
 </html>
