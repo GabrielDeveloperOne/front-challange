@@ -1,9 +1,13 @@
 
 /* Adicicionando $ ao escopo global */
-let $ = document.querySelector.bind(document);
+const $ = document.querySelector.bind(document);
 
 
+let arraySenhas = [...document.querySelectorAll('.password-User')];
 
+arraySenhas.addEventListener('input', (e) => {
+
+}
 
 /* Utilização de Regex para mascara do telefone */
 $('#phone').addEventListener('input', (e) => {
