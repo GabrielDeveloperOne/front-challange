@@ -21,10 +21,8 @@
               <form>
                 <!-- Forms -->
                 <div class="formcontent__row">
-                  
                     <input class="formcontent__row--together unicos" type="text"  placeholder="First name" required>
-                    <input class="formcontent__row--together " type="text"  placeholder="Phone" required>
-                  
+                    <input class="formcontent__row--together " type="text"  placeholder="Phone" id="phone" required>
                 </div>
 
                 <input type="text"  placeholder="Email Addres" required>
@@ -35,15 +33,22 @@
                 </div>
 
                 <!-- Botões para submeter form -->
-                <button type="submit" ><span></span></button>
-                <button type="submit"><span></span></button>
-                <button type="submit"><span></span></button>
-                <input type="submit" name="submit" value="Register Account">
-                <input type="submit" name="submit" value="Register with Google">
-                <input type="submit" name="submit" value="Register with Facebook">
+                <button class="formcontent__row--together register" type="submit" >Register Account</button>
+                <div class="others-register">
+                <button class="formcontent__row--together register-google" type="submit">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" class="svg-inline--fa fa-google fa-w-16" role="img" viewBox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+                </svg>Register with Google</button>
+                <button class="formcontent__row--together register-facebook" type="submit">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" viewBox="0 0 320 512">
+                    <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                  </svg>Register with Facebook</button>
+                </div>
               </form>
             </div>
+            
            </div>
+           <a href="#">Forgot Password?</a>
+            <a href="#">Already have an account? Login!</a>
         </div>
     </div>
     <footer>
