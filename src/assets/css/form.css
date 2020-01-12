@@ -1,4 +1,8 @@
 /*  Container do form */
+*:focus {
+  outline: none;
+}
+
 form {
   margin: 0 auto;
   display: flex;
@@ -26,6 +30,7 @@ form {
 .unicos {
   margin-right: 22px;
 }
+
 
 .formcontent{/* margin: 10px; */width: 100%;}
 .formcontent input{

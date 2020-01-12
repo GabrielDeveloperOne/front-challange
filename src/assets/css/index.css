@@ -8,7 +8,7 @@
 html{ height: 100%; }
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(45deg,#4d73d8, #3e65ce );
+  background: linear-gradient(180deg,#4d73d8, #3e65ce );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ h1 {
   margin-bottom: 12px;
 }
 /* Media Queries -  */
-@media(max-width : 1024px){
+@media(max-width : 720px){
   .img__cachorro{ display: none; }
   .container{ grid-template-columns: 1fr; }
   .contentform{
@@ -63,5 +63,6 @@ h1 {
   .informacoes h1{ font-size: 30px; }
   .informacoes p{ font-size: 16px; }
   .formcontent input{ width: 100%; }
-  .container{ width: 325px; }
+  .container{ width: 350px; }
+  .sub-content-form {margin: 0 5px 0 5px}
 }
