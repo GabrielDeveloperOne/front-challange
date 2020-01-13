@@ -18,3 +18,11 @@
 **Tela do desafio**
 
 <img src="https://i.imgur.com/141O3Aa.jpg" width="100%" alt="Form image"/>
+
+**Desafio realizado**
+
+* Não foi utlizado nenhum framework ou lib
+* Scripts foram feitos em Javascript puro com uma abordagem em programação funcional
+* Estilo do CSS foi realizado com Grid layout e flex box, para os icones foi utilizado SVG
+
+* By: Gabriel P. Ribeiro'
