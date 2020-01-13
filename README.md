@@ -25,4 +25,4 @@
 * Scripts foram feitos em Javascript puro com uma abordagem em programação funcional
 * Estilo do CSS foi realizado com Grid layout e flex box, para os icones foi utilizado SVG
 
-* By: Gabriel P. Ribeiro'
+* By: Gabriel P. Ribeiro
