@@ -2,9 +2,7 @@
 /* Adicicionando $ ao escopo global */
 const $ = document.querySelector.bind(document);
 
-
 /* Validando formulario */
-
 let firstName = $('.input-name');
 let phoneUser = $('.input-phone');
 let emailUser = $('.input-email');
@@ -14,22 +12,30 @@ let senhaRepeat = $('.password-Repeat');
 
 let erroSenha = $('.error-password');
 
+$('.password').addEventListener('change', () => {
+  if(senha.value === senhaRepeat.value){
+    erroSenha.style.display = 'none';
+  } else {
+    erroSenha.style.display = 'block';
+    senha.style.border = '2px solid red';
+    senhaRepeat.style.border = '2px solid red';
+  }
+})
+
 const validacaoForm = () => {
-  $('.password').addEventListener('input', (e) => {
-    if(senha.value === senhaRepeat.value){
-      erroSenha.style.display = 'block';
+  if(firstName.value.length > 1 && phoneUser.value.length > 1 && emailUser.value.length > 1 && senha.value.length > 1 && senhaRepeat.value.length > 1){
+    if(senha.value === senhaRepeat.value) {
+      alert(`Olá seja bem-vindo!
+      Seu nome: ${firstName.value}; 
+      Telefone: ${phoneUser.value}; 
+      E-mail: ${emailUser.value}; 
+      Senhas: ${senha.value} e ${senhaRepeat.value}`);
     } else {
-      erroSenha.style.display = 'none';
+      
     }
-  })
-  return alert(`Olá seja bem-vindo!
-                Seu nome: ${firstName.value}; 
-                Telefone: ${phoneUser.value}; 
-                E-mail: ${emailUser.value}; 
-                Senhas: ${senha.value} e ${senhaRepeat.value}`);
+ 
+  } 
 };
-
-
 
 /* Utilização de Regex para mascara do telefone */
   $('#phone').addEventListener('input', (e) => {
