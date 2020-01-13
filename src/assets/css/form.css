@@ -59,6 +59,14 @@ form {
   width: 100%;
 }
 
+.error-password {
+    display: none;
+    font-size: 0.9em;
+    color:#e7443d;
+    font-weight: 600;
+}
+
+
 .formcontent .register{background-color: #5076db;margin-top: 12px;}
 
 .formcontent .register-google {
