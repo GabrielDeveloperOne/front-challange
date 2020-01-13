@@ -66,18 +66,37 @@ form {
     font-weight: 600;
 }
 
+.formcontent .register{
+  background-color: #5076db;
+  margin-top: 12px;
+}
 
-.formcontent .register{background-color: #5076db;margin-top: 12px;}
+.register:hover {
+  background-color: #5f7ed2;
+  cursor: pointer;
+}
 
 .formcontent .register-google {
   background-color: #e7443d;
   font-size: 0.9em;
   margin-bottom: 12px;
 }
+
+.register-google:hover{
+  background-color: #e45852;
+  cursor: pointer;
+}
+
 .formcontent .register-facebook {
   background-color: #3c5a96;
   font-size: 0.9em;
 }
+
+.register-facebook:hover {
+  background-color: #475f90;
+  cursor: pointer;
+}
+
 .fa-google, .fa-facebook-f{width: 19px;height: 13px;}
 .input-email {margin: 12px 0 12px 0;}
 
@@ -86,4 +105,9 @@ a {
   font-size: 0.9em;
   color: #82a6ff;
   font-weight: 600;
+  
+}
+a:hover {
+  color: #6c96ff;
+  cursor: pointer;
 }
