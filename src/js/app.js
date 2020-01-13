@@ -1,16 +1,23 @@
 
 /* Adicicionando $ ao escopo global */
-const $ = document.querySelector.bind(document);
+let $ = document.querySelector.bind(document);
 
 
-let arraySenhas = [...document.querySelectorAll('.password-User')];
+/* Validando formulario */
+let senha = $('.password-User');
+let senhaRepeat = $('.password-Repeat');
 
-arraySenhas.addEventListener('input', (e) => {
+$('.password').addEventListener('change', function(e){
+  if(senha.value === senhaRepeat.value){
+      console.log('certo')
+  } else {
+      console.log('erro');
+  }
+})
 
-}
 
 /* Utilização de Regex para mascara do telefone */
-$('#phone').addEventListener('input', (e) => {
+  $('#phone').addEventListener('input', (e) => {
     let tel = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
     e.target.value = !tel[2] ? tel[1] : '(' + tel[1] + ') ' + tel[2] + (tel[3] ? '-' + tel[3] : '');
   });
