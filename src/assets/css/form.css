@@ -25,6 +25,7 @@ form {
 .formcontent__row {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .unicos {
@@ -68,6 +69,7 @@ form {
 
 .formcontent .register{
   background-color: #5076db;
+  font-size: 0.9em;
   margin-top: 12px;
 }
 

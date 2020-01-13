@@ -26,6 +26,10 @@ body{
   border-radius: 7px;
 }
 
+.sub-content-form {
+  width: 88%;
+}
+
 h1 {
   text-align: center;
 }
