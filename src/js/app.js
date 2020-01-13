@@ -15,6 +15,8 @@ let erroSenha = $('.error-password');
 $('.password').addEventListener('change', () => {
   if(senha.value === senhaRepeat.value){
     erroSenha.style.display = 'none';
+    senha.style.border = '1px solid #51c751';
+    senhaRepeat.style.border = '1px solid #51c751';
   } else {
     erroSenha.style.display = 'block';
     senha.style.border = '2px solid red';
